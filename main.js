@@ -1,3 +1,7 @@
+
+
+var log = function(){console.log()}
+
 // CHALLENGE 1: REVERSE A STRING
 // ex. reverseString('Welcome') === 'emoclew'
 
@@ -73,3 +77,15 @@ function isPalindrome(str) {
   const Palindrome = isPalindrome("hello");
   console.log(Palindrome)
   
+  ////////////////////////////////////////////////////////////////////
+
+  // CHALLENGE 3: FIZZBUZZ
+// Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+function fizzBuzz() {
+    if (i % 3 === 0){
+        console.log(fizz)
+    }else{
+       console.log(i)
+    }
+}
+console.log(fizzBuzz)
