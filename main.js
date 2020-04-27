@@ -172,3 +172,11 @@ function maxCharacter(str) {
 
 const MaxCharacter = maxCharacter('Madam');
 console.log(MaxCharacter)
+
+//CHALLENGE 6: LETTER CHANGES
+// b should return c and z should return a. It should return the next letter.
+function letterChanges() {
+    console.log("change letters");
+}
+
+console.log(letterChanges());
