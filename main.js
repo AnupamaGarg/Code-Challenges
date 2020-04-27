@@ -106,3 +106,23 @@ function reverseInt(int) {
 
   return parseInt(revString) * Math.sign(int);
 }
+const ReverseInt = reverseInt(12345)
+console.log(ReverseInt)
+
+
+
+// CHALLENGE 4: CAPITALIZE LETTERS
+// Return a string with the first letter of every word capitalized
+// ex. capitalizeLetters('write in capital letters') === 'Write In Capital Letters'
+function capitalizeLetters(str) {
+    const strArr = str.toLowerCase().split(' ');
+  
+    for(let i = 0; i < strArr.length; i++) {
+     strArr[i] = strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+     }
+  
+    return strArr.join(' ');
+}
+
+const CapitalizeLetters = capitalizeLetters('write in capital letters');
+console.log(CapitalizeLetters);
