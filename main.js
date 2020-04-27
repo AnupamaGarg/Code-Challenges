@@ -122,7 +122,53 @@ function capitalizeLetters(str) {
      }
   
     return strArr.join(' ');
+
+     /////////////////////////////
+
+  // return str
+  //   .toLowerCase()
+  //   .split(' ')
+  //   .map(word => word[0].toUpperCase() + word.substr(1))
+  //   .join(' ');
+
+  /////////////////////////////
+
+//   return str.replace(/\b[a-z]/gi, function(char) {
+//     return char.toUpperCase();
+//   });
+
 }
 
 const CapitalizeLetters = capitalizeLetters('write in capital letters');
 console.log(CapitalizeLetters);
+
+
+// CHALLENGE 5: MAX CHARACTER
+// Return the character that is most common in a string
+// ex. maxCharacter('Madam') == 'a'
+function maxCharacter(str) {
+    const charMap = {};
+    let maxNum = 0;
+    let maxChar = '';
+
+    str.split('').forEach(function(char) {
+        if(charMap[char]) {
+          charMap[char]++;
+        } else {
+          charMap[char] = 1;
+        }
+      });
+    
+      for(let char in charMap) {
+        // debugger;
+        if(charMap[char] > maxNum) {
+          maxNum = charMap[char];
+          maxChar = char;
+        }
+      }
+    
+      return maxChar;
+}
+
+const MaxCharacter = maxCharacter('Madam');
+console.log(MaxCharacter)
