@@ -219,7 +219,7 @@ console.log(SplitArr);
 
 
 
-// CHALLENGE 3: FLATTEN ARRAY
+// CHALLENGE 8: FLATTEN ARRAY
 // Take an array of arrays and flatten to a single array
 // ex. [[1, 2], [3, 4], [5, 6], [7]] = [1, 2, 3, 4, 5, 6, 7]
 
@@ -235,3 +235,18 @@ function  flatenArray(arr){
 }
 const FlatenArray = flatenArray([[1, 2], [3, 4], [5, 6], [7]])
 console.log(FlatenArray); 
+
+
+// CHALLENGE 9 : ANAGRAM
+// Return true if anagram and false if not
+// ex. 'elbow' === 'below'
+// ex. 'Dormitory' === 'dirty room##'
+
+function isAnagramx (str1,str2){
+  const arr1 = str1.split('').sort()
+  const arr2 = str2.split('').sort()
+  return arr1.every((value,index) => value === arr2[index])
+}
+
+const IsAnagramx = isAnagramx();
+console.log(IsAnagramx);
