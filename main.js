@@ -194,3 +194,25 @@ console.log(LetterChanges);// returns xfmdpnf
 // CHALLENGE 7: Array Spliting
 // Split an array into chunked arrays of a specific length
 // ex. splitArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2],[3, 4],[5, 6],[7]]
+
+function splitArray(arr, len) {
+  
+  const splitedArr = [];
+
+  // Loop through arr
+  arr.forEach(val => {
+    // Get last element
+    const last = splitedArr[splitedArr.length - 1];
+
+    // Check if last and if last length is equal to the chunk len
+    if (!last || last.length === len) {
+      splitedArr.push([val]);
+    } else {
+      last.push(val);
+    }
+  });
+
+  return splitedArr;
+}
+const SplitArr = splitArray([1, 2, 3, 4, 5, 6, 7], 2)
+console.log(SplitArr); 
