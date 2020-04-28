@@ -216,3 +216,22 @@ function splitArray(arr, len) {
 }
 const SplitArr = splitArray([1, 2, 3, 4, 5, 6, 7], 2)
 console.log(SplitArr); 
+
+
+
+// CHALLENGE 3: FLATTEN ARRAY
+// Take an array of arrays and flatten to a single array
+// ex. [[1, 2], [3, 4], [5, 6], [7]] = [1, 2, 3, 4, 5, 6, 7]
+
+
+function  flatenArray(arr){
+  newArr = []
+  for( let i = 0 ; i < arr.length ; i++){
+      for(let j = 0 ; j < arr[i].length ; j++){
+          newArr.push(arr[i][j])
+      }
+  }
+  return newArr
+}
+const FlatenArray = flatenArray([[1, 2], [3, 4], [5, 6], [7]])
+console.log(FlatenArray); 
