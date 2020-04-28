@@ -190,3 +190,7 @@ function letterChanges(str) {
 }
 const LetterChanges = letterChanges("Welcome")
 console.log(LetterChanges);// returns xfmdpnf
+
+// CHALLENGE 7: Array Spliting
+// Split an array into chunked arrays of a specific length
+// ex. splitArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2],[3, 4],[5, 6],[7]]
