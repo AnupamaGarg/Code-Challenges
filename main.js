@@ -250,3 +250,9 @@ function isAnagramx (str1,str2){
 
 const IsAnagramx = isAnagramx();
 console.log(IsAnagramx);
+
+
+
+// CHALLENGE 10: ADD ALL NUMBERS
+// Return a sum of all parameters entered regardless of the amount of numbers - NO ARRAYS
+// ex. addAll(2,5,6,7) === 20
