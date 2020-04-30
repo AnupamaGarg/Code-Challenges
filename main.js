@@ -295,3 +295,7 @@ function sumAllPrimes(num) {
 
 const SumAllPrimes = sumAllPrimes(20);
 console.log(SumAllPrimes);
+
+// CHALLENGE 12: EVEN & ODD SUMS
+// Take in an array and return an array of the sums of even and odd numbers
+// evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
