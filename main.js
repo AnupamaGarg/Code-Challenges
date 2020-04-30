@@ -242,14 +242,14 @@ console.log(FlatenArray);
 // ex. 'elbow' === 'below'
 // ex. 'Dormitory' === 'dirty room##'
 
-function isAnagramx (str1,str2){
-  const arr1 = str1.split('').sort()
-  const arr2 = str2.split('').sort()
-  return arr1.every((value,index) => value === arr2[index])
-}
+// function isAnagramx (str1,str2){
+//   const arr1 = str1.split('').sort()
+//   const arr2 = str2.split('').sort()
+//   return arr1.every((value,index) => value === arr2[index])
+// }
 
-const IsAnagramx = isAnagramx();
-console.log(IsAnagramx);
+// const IsAnagramx = isAnagramx();
+// console.log(IsAnagramx);
 
 
 
@@ -265,3 +265,5 @@ function addAll() {
   }
   return total;
 }
+const AddAll = addAll(4,2,5,6);
+console.log(AddAll);
