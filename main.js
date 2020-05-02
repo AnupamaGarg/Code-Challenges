@@ -299,3 +299,19 @@ console.log(SumAllPrimes);
 // CHALLENGE 12: EVEN & ODD SUMS
 // Take in an array and return an array of the sums of even and odd numbers
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
+
+function evenOddSums(arr) {
+  let evenSum = 0;
+  let oddSum = 0;
+
+  arr.forEach(num => (num % 2 === 0 ? (evenSum += num) : (oddSum += num)));
+
+  return [evenSum, oddSum];
+}
+const EvenOddSums = evenOddSums([50, 60, 60, 45, 71]);
+console.log(EvenOddSums);
+
+
+// CHALLENGE 13: MISSING LETTERS
+// Find the missing letter in the passed letter range and return it. If all letters are present, return undefined
+// missingLetters("abcefgh") == "d"
