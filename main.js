@@ -340,3 +340,15 @@ console.log(MissingLetters);
 // ex:  a = [1,2,3,2,4,1,5,,8] == [1,2,3,4,5,8]
 
 
+let a = [1,2,3,2,4,1,5,,8]
+
+let b = []
+let len = a.length // it will reduce the effort of calculating length on each iteration.
+for (let i=0;i<len;i++){
+  if(b.indexOf(a[i])== -1){
+    b.push(a[i])
+  }
+
+}
+
+console.log(b);
