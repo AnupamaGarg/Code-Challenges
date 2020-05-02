@@ -333,3 +333,10 @@ function missingLetters(str) {
 
 const MissingLetters = missingLetters("abcefgh");
 console.log(MissingLetters);
+
+
+
+//Challenhe 14: Remove duplicates from array
+// ex:  a = [1,2,3,2,4,1,5,,8] == [1,2,3,4,5,8]
+
+
