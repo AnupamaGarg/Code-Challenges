@@ -352,3 +352,8 @@ for (let i=0;i<len;i++){
 }
 
 console.log(b);
+
+
+// CHALLENGE 15: SEEK & DESTROY
+// Remove from the array whatever is in the following arguments. Return the leftover values in an array
+// ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
