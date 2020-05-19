@@ -375,3 +375,16 @@ console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6));
 
 //Challenge 16 : Convert Minutes to Seconds
 
+function convert(input) {
+  var parts = input.split(':'),
+      minutes = Number(parts[0]),
+      seconds = Number(parts[1]);
+  return (minutes * 60 + seconds).toFixed(3);
+}
+
+console.log(convert('1:29.460')); 
+
+
+
+
+
