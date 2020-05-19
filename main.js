@@ -370,3 +370,8 @@ function seekAndDestroy(arr) {
 }
 
 console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6));
+
+
+
+//Challenge 16 : Convert Minutes to Seconds
+
