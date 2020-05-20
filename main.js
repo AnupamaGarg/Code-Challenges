@@ -388,5 +388,11 @@ console.log(convert('1:29.460'));
 // Challenge 17: Program for Fibonacci numbers
 //The Fibonacci numbers are the numbers in the following integer sequence.
 //0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
-
-
+function fibonacci(n){
+let arr = [0,1];
+for (let i = 2; i < n+1; i++) {
+    arr.push((arr[i-2]) + (arr[i - 1]));
+}
+return arr[n];
+}
+console.log(fibonacci(10));
