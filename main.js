@@ -353,7 +353,7 @@ for (let i=0;i<len;i++){
 
 console.log(b);
 
-
+///////////////////////////////////////////////////////////
 // CHALLENGE 15: SEEK & DESTROY
 // Remove from the array whatever is in the following arguments. Return the leftover values in an array
 // ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
@@ -371,7 +371,7 @@ function seekAndDestroy(arr) {
 
 console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6));
 
-
+////////////////////////////////////////////////////////////////
 
 //Challenge 16 : Convert Minutes to Seconds
 
@@ -385,6 +385,8 @@ function convert(input) {
 console.log(convert('1:29.460')); 
 
 
-
+// Challenge 17: Program for Fibonacci numbers
+//The Fibonacci numbers are the numbers in the following integer sequence.
+//0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
 
 
