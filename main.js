@@ -398,5 +398,15 @@ return arr[n];
 console.log(fibonacci(10));
 
 //Challenge 16 : Convert hour to Seconds
+function convert(input) {
+  var parts = input.split(':'),
+      hours = Number(parts[0]),
+      minutes = Number(parts[1]),
+      seconds = Number(parts[2]);
+  return (hours * 60 * 60 + minutes * 60 + seconds).toFixed(3);
+}
+
+console.log(convert('1:29:46')); 
+
 
 
