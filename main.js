@@ -396,3 +396,7 @@ for (let i = 2; i < n+1; i++) {
 return arr[n];
 }
 console.log(fibonacci(10));
+
+//Challenge 16 : Convert hour to Seconds
+
+
