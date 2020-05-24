@@ -413,3 +413,17 @@ console.log(convert('1:29:46'));
 
 var Array = ['First','second','Third','fourth','fifth']
 alert(Array[0]);
+
+// Challenge 18 Is the string empty?
+
+var str ="";
+
+function isEmpty(str){
+  if (str.length === 0){
+    return true;
+    
+    }else{
+      return false;
+  }
+}
+console.log(isEmpty(""));
