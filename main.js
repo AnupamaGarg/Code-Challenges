@@ -411,4 +411,5 @@ console.log(convert('1:29:46'));
 
 //Challenge 17 Return first element from Array.
 
-
+var Array = ['First','second','Third','fourth','fifth']
+alert(Array[0]);
