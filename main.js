@@ -437,3 +437,6 @@ const factorial = num => {
 }
 
 console.log(factorial(4));
+
+
+//Challenge 18 Eliminate duplicate no from array by using hashtable
