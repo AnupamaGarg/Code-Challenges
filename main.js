@@ -428,7 +428,7 @@ function isEmpty(str){
 }
 console.log(isEmpty(""));
 
-// Challenge 19 find the factoral
+// Challenge 19 find the factorial
 
 //use recursive function
 
