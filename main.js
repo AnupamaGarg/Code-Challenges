@@ -488,3 +488,9 @@ const convert = num => {
 
 
 console.log(convert(28.12));
+
+
+
+// Challenge 20 Replace each space with %20
+//in a given string
+
