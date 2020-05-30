@@ -461,3 +461,6 @@ const duplicate = arr => {
 const array = [3,5,3,2,34,6,2,6,3,56,4,87];
 console.log(array);
 console.log(duplicate(array));
+
+
+//Challenge 19 Convert float to binary
