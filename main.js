@@ -375,14 +375,14 @@ console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6));
 
 //Challenge 16 : Convert Minutes to Seconds
 
-function convert(input) {
+function convert1(input) {
   var parts = input.split(':'),
       minutes = Number(parts[0]),
       seconds = Number(parts[1]);
   return (minutes * 60 + seconds).toFixed(3);
 }
 
-console.log(convert('1:29.460')); 
+console.log(convert1('1:29.460')); 
 
 
 // Challenge 17: Program for Fibonacci numbers
@@ -398,7 +398,7 @@ return arr[n];
 console.log(fibonacci(10));
 
 //Challenge 16 : Convert hour to Seconds
-function convert(input) {
+function convert2(input) {
   var parts = input.split(':'),
       hours = Number(parts[0]),
       minutes = Number(parts[1]),
@@ -406,7 +406,7 @@ function convert(input) {
   return (hours * 60 * 60 + minutes * 60 + seconds).toFixed(3);
 }
 
-console.log(convert('1:29:46')); 
+console.log(convert2('1:29:46')); 
 
 
 //Challenge 17 Return first element from Array.
