@@ -535,3 +535,5 @@ function sum_array(arr) {
   return sum;
 
 }
+
+console.log(sum_array([[3, 2], [1], [4, 12]]));
