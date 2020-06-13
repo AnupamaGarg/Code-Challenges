@@ -540,3 +540,12 @@ console.log(sum_array([[3, 2], [1], [4, 12]]));
 
 // CHALLENGE 22: REVERSE A STRING
 // ex. reverseString('Welcome') === 'emoclew'
+function reverseString(str) {
+let reverseStr = '';
+for (let i = str.length - 1; i >= 0; i--) {
+  reverseStr= reverseStr + str[i];
+ }
+return reverseStr;
+}
+
+console.log(reverseString("Welcom"));
