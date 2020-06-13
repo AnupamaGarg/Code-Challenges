@@ -537,3 +537,6 @@ function sum_array(arr) {
 }
 
 console.log(sum_array([[3, 2], [1], [4, 12]]));
+
+// CHALLENGE 22: REVERSE A STRING
+// ex. reverseString('Welcome') === 'emoclew'
