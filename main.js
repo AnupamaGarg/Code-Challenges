@@ -552,3 +552,33 @@ console.log(reverseString("Welcom"));
 
 
 //Challenge 23: Finding the first non-repeated character
+
+const EXTENDED_ASCII_CODES = 256
+
+const first_non_repeated_character = function(str) {
+
+    var flags = []
+    for (let i = 0; i < EXTENDED_ASCII_CODES; i++) {
+        flags.push(-1)
+    }
+
+    for (let j = 0; j< str.length; j++) {
+
+        var ch = str.charCodeAt(j)
+        if (flags[ch] == -1) {
+            flags[ch] = j
+        } else {
+            flags[ch] = -2
+        }
+    }
+
+    var position = Number.MAX_SAFE_INTEGER
+
+    for (let k = 0; k < EXTENDED_ASCII_CODES; k++) {
+        if (flags[k] > 0) {
+            position = Math.min(position, flags[k])
+        }
+    }
+
+    return str[position]
+}
