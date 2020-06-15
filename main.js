@@ -549,3 +549,6 @@ return reverseStr;
 }
 
 console.log(reverseString("Welcom"));
+
+
+//Challenge 23: Finding the first non-repeated character
