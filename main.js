@@ -584,3 +584,7 @@ const first_non_repeated_character = function(str) {
 }
 
 console.log(first_non_repeated_character("cbcbdde"))
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Challenge 24 — Generating all permutations
