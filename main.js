@@ -605,3 +605,5 @@ const permute = function (prefix, str) {
       }
   }
 }
+
+console.log(permute_and_print("abc"));
