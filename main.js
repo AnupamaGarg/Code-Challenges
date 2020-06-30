@@ -627,3 +627,4 @@ const count_duplicate_characters = function(str) {
   return result
 
 }
+console.log(count_duplicate_characters('adsjfdsfsfjsdjfhacabcsbajda'));
