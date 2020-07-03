@@ -647,3 +647,5 @@ const sort = function(arr) {
       arr[j+1] = temp
   }
 }
+
+console.log(sort(["You", "are", "beautiful", "looking"]));
