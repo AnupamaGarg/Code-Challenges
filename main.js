@@ -628,3 +628,7 @@ const count_duplicate_characters = function(str) {
 
 }
 console.log(count_duplicate_characters('adsjfdsfsfjsdjfhacabcsbajda'));
+
+
+
+//Challenge # 26— Sorting an array of strings by length
