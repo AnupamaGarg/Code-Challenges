@@ -97,7 +97,7 @@ function fizzBuzz() {
 const FizzBuzz= fizzBuzz();
 console.log(FizzBuzz);
 
-// CHALLENGE 4: REVERSE AN INTEGER
+// CHALLENGE 4: REVERSE AN INTEGER///////////////////////////////////////////////////////////////////////////
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
@@ -111,7 +111,7 @@ console.log(ReverseInt)
 
 
 
-// CHALLENGE 4: CAPITALIZE LETTERS
+// CHALLENGE 4: CAPITALIZE LETTERS//////////////////////////////////////////////////////////////////////////
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('write in capital letters') === 'Write In Capital Letters'
 function capitalizeLetters(str) {
@@ -143,7 +143,7 @@ const CapitalizeLetters = capitalizeLetters('write in capital letters');
 console.log(CapitalizeLetters);
 
 
-// CHALLENGE 5: MAX CHARACTER
+// CHALLENGE 5: MAX CHARACTER/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Return the character that is most common in a string
 // ex. maxCharacter('Madam') == 'a'
 function maxCharacter(str) {
@@ -173,7 +173,7 @@ function maxCharacter(str) {
 const MaxCharacter = maxCharacter('Madam');
 console.log(MaxCharacter)
 
-//CHALLENGE 6: LETTER CHANGES
+//CHALLENGE 6: LETTER CHANGES//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // b should return c and z should return a. It should return the next letter.
 function letterChanges(str) {
     let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
@@ -191,7 +191,7 @@ function letterChanges(str) {
 const LetterChanges = letterChanges("Welcome")
 console.log(LetterChanges);// returns xfmdpnf
 
-// CHALLENGE 7: Array Spliting
+// CHALLENGE 7: Array Spliting/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Split an array into chunked arrays of a specific length
 // ex. splitArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2],[3, 4],[5, 6],[7]]
 
@@ -219,7 +219,7 @@ console.log(SplitArr);
 
 
 
-// CHALLENGE 8: FLATTEN ARRAY
+// CHALLENGE 8: FLATTEN ARRAY/////////////////////////////////////////////////////////////////////////////////////////////////
 // Take an array of arrays and flatten to a single array
 // ex. [[1, 2], [3, 4], [5, 6], [7]] = [1, 2, 3, 4, 5, 6, 7]
 
@@ -237,7 +237,7 @@ const FlatenArray = flatenArray([[1, 2], [3, 4], [5, 6], [7]])
 console.log(FlatenArray); 
 
 
-// CHALLENGE 9 : ANAGRAM
+// CHALLENGE 9 : ANAGRAM/////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Return true if anagram and false if not
 // ex. 'elbow' === 'below'
 // ex. 'Dormitory' === 'dirty room##'
@@ -253,7 +253,7 @@ console.log(FlatenArray);
 
 
 
-// CHALLENGE 10: ADD ALL NUMBERS
+// CHALLENGE 10: ADD ALL NUMBERS //////////////////////////////////////////////////////////////////////////////////////////////////
 // Return a sum of all parameters entered regardless of the amount of numbers - NO ARRAYS
 // ex. addAll(2,5,6,7) === 20
 
@@ -269,7 +269,7 @@ const AddAll = addAll(4,2,5,6);
 console.log(AddAll);
 
 
-//CHALLENGE 11: SUM ALL PRIMES
+//CHALLENGE 11: SUM ALL PRIMES ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Pass in a number to loop up to and add all of the prime numbers. A prime number is a whole number greater than 1 whose only factors are 1 and itself
 // ex. sumAllPrimes(10) == 17
 
@@ -296,7 +296,7 @@ function sumAllPrimes(num) {
 const SumAllPrimes = sumAllPrimes(20);
 console.log(SumAllPrimes);
 
-// CHALLENGE 12: EVEN & ODD SUMS
+// CHALLENGE 12: EVEN & ODD SUMS ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Take in an array and return an array of the sums of even and odd numbers
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
 
@@ -312,7 +312,7 @@ const EvenOddSums = evenOddSums([50, 60, 60, 45, 71]);
 console.log(EvenOddSums);
 
 
-// CHALLENGE 13: MISSING LETTERS
+// CHALLENGE 13: MISSING LETTERS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Find the missing letter in the passed letter range and return it. If all letters are present, return undefined
 // missingLetters("abcefgh") == "d"
 
@@ -336,7 +336,7 @@ console.log(MissingLetters);
 
 
 
-//Challenhe 14: Remove duplicates from array
+//Challenhe 14: Remove duplicates from array///////////////////////////////////////////////////////////////////////////////////////////////
 // ex:  a = [1,2,3,2,4,1,5,,8] == [1,2,3,4,5,8]
 
 
@@ -353,8 +353,7 @@ for (let i=0;i<len;i++){
 
 console.log(b);
 
-///////////////////////////////////////////////////////////
-// CHALLENGE 15: SEEK & DESTROY
+// CHALLENGE 15: SEEK & DESTROY//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Remove from the array whatever is in the following arguments. Return the leftover values in an array
 // ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
 
@@ -373,7 +372,7 @@ console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6));
 
 ////////////////////////////////////////////////////////////////
 
-//Challenge 16 : Convert Minutes to Seconds
+//Challenge 16 : Convert Minutes to Seconds///////////////////////////////////////////////////////////////////////////////////////////////
 
 function convert1(input) {
   var parts = input.split(':'),
@@ -385,7 +384,7 @@ function convert1(input) {
 console.log(convert1('1:29.460')); 
 
 
-// Challenge 17: Program for Fibonacci numbers
+// Challenge 17: Program for Fibonacci numbers//////////////////////////////////////////////////////////////////////////////////////////////
 //The Fibonacci numbers are the numbers in the following integer sequence.
 //0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
 function fibonacci(n){
@@ -654,3 +653,35 @@ console.log(sort(["You", "are", "beautiful", "looking"]));
 //Challenge # 27— Finding the first non-repeated character
 //Input: "cbcbdde"
 //Output: e
+//We will re-solve the problem in the single traversal approach. 
+//Here, we use a flag array with 256 items to store non-repeated characters and then we find smallest index containing a non-repeated character.
+
+const EXTENDED_ASCII_CODES = 256
+
+const first_non_repeated_character = function(str) {
+
+    var flags = []
+    for (let i = 0; i < EXTENDED_ASCII_CODES; i++) {
+        flags.push(-1)
+    }
+
+    for (let j = 0; j< str.length; j++) {
+
+        var ch = str.charCodeAt(j)
+        if (flags[ch] == -1) {
+            flags[ch] = j
+        } else {
+            flags[ch] = -2
+        }
+    }
+
+    var position = Number.MAX_SAFE_INTEGER
+
+    for (let k = 0; k < EXTENDED_ASCII_CODES; k++) {
+        if (flags[k] > 0) {
+            position = Math.min(position, flags[k])
+        }
+    }
+
+    return str[position]
+}
