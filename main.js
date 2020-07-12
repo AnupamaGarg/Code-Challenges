@@ -649,3 +649,8 @@ const sort = function(arr) {
 }
 
 console.log(sort(["You", "are", "beautiful", "looking"]));
+
+
+//Challenge # 27— Finding the first non-repeated character
+//Input: "cbcbdde"
+//Output: e
