@@ -685,3 +685,5 @@ const first_non_repeated_character = function(str) {
 
     return str[position]
 }
+
+console.log(first_non_repeated_character("cbcbdde"));
